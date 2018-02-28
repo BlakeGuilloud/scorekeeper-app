@@ -1,0 +1,16 @@
+service: scorekeeper-app-api
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  environment:
+    SCOREKEEPER_BUCKET: ${file(./config.json):SCOREKEEPER_BUCKET}
+
+functions:
+  uploadFile:
+    handler: handler.uploadFile
+    events:
+      - http:
+          path: uploadFile
+          method: post
+          cors: true

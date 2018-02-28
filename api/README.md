@@ -1,0 +1,1 @@
+Basic serverless API hosted on AWS for uploading files to S3.

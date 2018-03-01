@@ -63,7 +63,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="app">
         <a href="https://github.com/blakeGuilloud/scorekeeper-app"><img style={{ position: "absolute", top: 0, right: 0, border: 0, }} src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
         <div className="jumbotron jumbotron-fluid">
           <div className="container">
@@ -71,7 +71,7 @@ class App extends Component {
             <p className="lead">A service for calculating tournament scores into rankings.</p>
           </div>
         </div>
-        <div className="container">
+        <div className="container content">
           {this.state.err &&
             <div className="row justify-content-center">
                 <div className="alert alert-danger" role="alert">
